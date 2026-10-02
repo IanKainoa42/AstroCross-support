@@ -22,16 +22,16 @@
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="effective-date">Effective date: September 14, 2026</p>
+    <p class="effective-date">Effective date: October 2, 2026</p>
 
     <div class="highlight">
-        <strong>Summary:</strong> AstroCross does not collect personal data for the developer. Race settings stay on your device. Optional online play uses Apple Game Center.
+        <strong>Summary:</strong> Race settings and custom tracks stay on your device. Optional online play uses Apple Game Center and a shared CloudKit pilot lobby. Lobby data is used to find pilots and deliver race invitations, without advertising or tracking.
     </div>
 
     <h2>What AstroCross stores on your device</h2>
     <ul>
         <li>Race tuning and control preferences (for example Large Controls, Left-Handed, haptics)</li>
-        <li>Local game progress related to racing on this device</li>
+        <li>Local game progress, custom tracks, selected hull and paint, and cached cosmetic purchase ownership</li>
     </ul>
     <p>This data is saved using your device’s local storage.</p>
 
@@ -46,11 +46,19 @@
     <h2>Game Center</h2>
     <p>If you choose to play online or use leaderboards, AstroCross uses Apple Game Center. Game Center is operated by Apple and subject to Apple’s privacy policy. AstroCross does not receive a separate developer analytics feed from Game Center beyond what Apple provides for multiplayer and leaderboards.</p>
 
+    <h2>Pilot lobby and invitations</h2>
+    <p>When you use online features, AstroCross stores your Game Center player identifier, display name, selected ship, current lobby activity, and an update timestamp in the app's public Apple CloudKit database. Other pilots can see your name, ship, and recent activity to find someone to race.</p>
+    <p>Race invitations store the inviter and recipient's player identifiers and display names, the inviter's ship, invitation and expiry timestamps, and whether an invitation was withdrawn or answered. Invitations stop appearing when they expire or are withdrawn; expiry hides an invitation and does not automatically delete its CloudKit record.</p>
+    <p>This information is linked to your Game Center identity and used only for app functionality. It is not used for advertising, analytics, cross-app tracking, or profiling. CloudKit is hosted by Apple. The app developer can access records in this public database to operate and troubleshoot the lobby.</p>
+
+    <h2>Cosmetic purchases</h2>
+    <p>Optional hull purchases use Apple's StoreKit. Apple processes payment and purchase restoration. AstroCross stores an ownership cache on your device; the developer does not receive your payment details.</p>
+
     <h2>Children’s privacy</h2>
-    <p>AstroCross does not collect personal information from children for the developer. Online features require Game Center as provided by Apple.</p>
+    <p>Solo play works without Game Center. Online features use the same lobby data described above and require Game Center as provided by Apple; AstroCross does not request a child’s real name, email, or date of birth.</p>
 
     <h2>Data deletion</h2>
-    <p>Delete the app to remove local preferences and on-device data. Game Center data is managed through your Apple ID / Game Center settings.</p>
+    <p>Delete the app to remove local preferences and on-device data. This does not remove CloudKit lobby or invitation records. To request deletion of your lobby data, contact the address below with your Game Center display name; we may ask for information needed to verify the request. Game Center data is managed through your Apple Account and Game Center settings.</p>
 
     <h2>Changes to this policy</h2>
     <p>If this privacy policy is updated, the revised version will be posted on this page with an updated effective date.</p>
